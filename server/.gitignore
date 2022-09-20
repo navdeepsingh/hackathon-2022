@@ -7,3 +7,5 @@ node_modules
 .history
 .idea/
 .vscode/
+
+hackathon.falabella.com*.pem
