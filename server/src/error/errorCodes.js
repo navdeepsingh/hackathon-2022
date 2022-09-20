@@ -1,0 +1,9 @@
+"use strict";
+
+const INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR";
+const TIMEOUT_ERROR = "TIMEOUT_ERROR";
+
+module.exports = {
+  INTERNAL_SERVER_ERROR,
+  TIMEOUT_ERROR,
+};

@@ -1,0 +1,93 @@
+{
+    "root": true,
+    "env": {
+      "es2020": true,
+      "commonjs": true,
+      "node": true,
+      "es6": true
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "airbnb-base",      
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "script"
+    },
+    "rules": {
+      "strict": [
+        "error",
+        "safe"
+      ],
+      "func-style": [
+        "error",
+        "declaration"
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "prefer-const": [
+        "error",
+        {
+          "destructuring": "any",
+          "ignoreReadBeforeAssign": false
+        }
+      ],
+      "complexity": [
+        "error",
+        10
+      ],
+      "max-depth": [
+        "error",
+        4
+      ],
+      "require-atomic-updates": "error",
+      "func-names": 2,
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js",
+            "**/*.spec.js",
+            "jest/**/*.js",
+            "__mocks__/**.*.js",
+            "__tests__/**/*.js",
+            "integrationTests/**/*.js"
+          ]
+        }
+      ],
+      "no-param-reassign": [
+        "error",
+        {
+          "props": true,
+          "ignorePropertyModificationsFor": [
+            "fastify",
+            "req",
+            "request",
+            "res",
+            "response",
+            "error"
+          ]
+        }
+      ]      
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.js"
+        ],
+        "rules": {
+          "no-new": "off"
+        }
+      }
+    ]
+  }
+  

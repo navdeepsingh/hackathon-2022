@@ -1,0 +1,9 @@
+.env
+build/
+node_modules
+
+# OS / IDE
+.DS_Store
+.history
+.idea/
+.vscode/

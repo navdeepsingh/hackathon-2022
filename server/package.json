@@ -1,0 +1,37 @@
+{
+  "name": "recommendation-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "npm run lint -- --fix",
+    "dev": "NODE_ENV=development nodemon -e js index",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.1.0",
+    "@fastify/env": "^4.1.0",
+    "axios": "^0.27.2",
+    "env-schema": "^5.0.0",
+    "fastify": "^4.5.2",
+    "fastify-plugin": "^4.2.0",
+    "fastify-routes": "^3.2.0",
+    "lodash.once": "^4.1.1",
+    "make-promises-safe": "^5.1.0",
+    "node-cache": "^5.1.2",
+    "url-template": "^2.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.8.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier-eslint": "^15.0.1"
+  }
+}
